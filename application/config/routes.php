@@ -54,4 +54,4 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['index'] = 'index/index';
-$route['add_account'] = 'index/api_call';
+$route['add_account'] = 'index/add_account';

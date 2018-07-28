@@ -30,11 +30,17 @@ class Index extends CI_Controller {
 		$this->load->view('index', $data);
 	}
 
-	public function api_call()
+	public function add_account()
 	{
-		$input = $this->input->post('api_name');
+		$username = $this->input->post('username');
+		$password = $this->input->post('password');
+		$account_name = $this->input->post('account_name');
 
-		if($input == "add")
+		$result = $this->api_model->add_sbaccount($username, $password, $account_name);
+		$data['result'] = $result;
+		$this->load->view('index', $data);
+
+		/*if($input == "add")
 		{
 			$result = $this->api_model->add_account();
 			$data['result'] = $result;
@@ -45,7 +51,7 @@ class Index extends CI_Controller {
 			$result = $this->api_model->branch_atm();
 			$data['result'] = $result;
 			$this->load->view('index', $data);
-		}
+		}*/
 
 		/*$result = $this->api_model->add_account();
 		$data['result'] = $result;

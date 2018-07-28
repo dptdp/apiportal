@@ -83,3 +83,7 @@ defined('EXIT_USER_INPUT')     OR define('EXIT_USER_INPUT', 7); // invalid user 
 defined('EXIT_DATABASE')       OR define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      OR define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
+
+define('CLIENT_ID', "55e43bdd-8643-4a1b-89ad-dc3711b2457f");
+define('CLIENT_SECRET', "S6dI3dK0yB4iG1lW5rC2oE1dC8dY5yC8qQ2jE1qP3hI1oU5rV0");
+define('REDIRECT_URI', "hello");
