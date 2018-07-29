@@ -1,0 +1,139 @@
+body
+{
+	font-size: 8pt;
+	margin: 0;
+	background-color: black;
+}
+
+a{
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.h1{
+    font-family: "Open Sans";
+	font-weight: bold;
+	font-size: 5em;
+}
+
+.h2{
+	font-size: 3em;
+}
+
+.h3{
+	font-family: "Open Sans";
+	font-size: 1.8em;
+}
+
+.h3-link{
+	font-family: "Open Sans";
+	font-size: 1.8em;
+	color: rgba(255, 252, 252, 0.8);
+}
+
+.h3-link:hover .fas:before {
+    content: "\f107";
+	color: rgba(255, 252, 252, 0.8);
+}
+
+.site-title{
+}
+
+.main-navbar{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 0 0 1em 0;
+}
+
+.main-navbar-item{
+	padding: .5em 3em;
+	border-bottom: .2em solid transparent;
+}
+
+.main-navbar-item:hover{
+	border-bottom: .25em solid #374456;
+	transition: 0.8s all;
+}
+
+
+
+#main-container{
+
+}
+
+#above-the-fold{
+	background: url("../images/chess2.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+}
+
+.above-the-fold-content{
+	width: 100%;
+    height: 100%;
+    text-align: center;  
+    padding: 15% 0 0 0;
+	color: rgba(255, 252, 252, 0.8);
+    transition: 0.7s all;
+}
+
+.color-layer{
+    background-color: rgba(38,48,64, 0.8);
+    color: rgba(255, 252, 252, 0.1);
+}
+
+
+
+
+
+.group:before, .group:after{
+	content: "";
+	display: block;
+}
+.group:after{
+	clear: both;
+}
+
+.col_1_of_2 {
+	float:left;
+	width: 48%;
+}
+
+.section-about{
+	background-color: #e9e9e9;
+	padding: 15em 6em;
+}
+
+.home-aboutsite-left{
+	font-family: "Open Sans";
+	font-size: 5em;
+	font-weight: bold;
+	text-align: right;
+}
+
+.home-aboutsite-right{
+	font-family: "Open Sans";
+	font-size: 1.4em;
+	padding: 1em 0 0 2em;
+}
+
+
+
+
+
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
